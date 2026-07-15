@@ -1,5 +1,5 @@
 import { Outlet, Navigate, useLocation, Link } from 'react-router-dom';
-import { LayoutDashboard, Users, ShoppingCart, Settings, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Users, ShoppingCart, Settings, LogOut, Menu, X, Briefcase } from 'lucide-react';
 import { useState } from 'react';
 import { useAuthStore } from '../../store/authStore';
 import { Button } from '../ui/button';
@@ -100,7 +100,10 @@ export default function AppShell() {
             </h1>
           </div>
           <div className="flex items-center space-x-4">
-            {/* Header controls removed */}
+            <div className="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+              <Briefcase className="h-5 w-5 text-[#FFD700]" />
+              <span className="font-bold text-[#FFD700] text-sm tracking-wider" style={{ fontFamily: "'Cinzel', serif" }}>CRM SYSTEM</span>
+            </div>
           </div>
         </header>
         <div className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8 no-scrollbar">
