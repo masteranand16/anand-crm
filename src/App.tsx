@@ -28,7 +28,7 @@ function App() {
       </AnimatePresence>
 
       {!isBooting && (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
         <Route path="/login" element={!isAuthenticated ? <Login /> : <Navigate to="/dashboard" replace />} />
         
