@@ -1,6 +1,6 @@
-# 🎬 Cinematic SaaS CRM Dashboard
+# SaaS CRM Dashboard
 
-Welcome to the **Cinematic SaaS CRM Dashboard**! This project is a highly-polished, modern, and fully responsive CRM (Customer Relationship Management) application built with React, TypeScript, and Tailwind CSS. 
+Welcome to the **SaaS CRM Dashboard**! This project is a highly-polished, modern, and fully responsive CRM (Customer Relationship Management) application built with React, TypeScript, and Tailwind CSS. 
 
 Unlike standard dashboards, this project features a **premium cinematic design language**, boasting deep red and black gradients, glowing gold typography (`Cinzel` font), live particle animations, and a realistic theatrical boot sequence.
 
