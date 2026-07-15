@@ -66,7 +66,7 @@ export function RevenueChart() {
                 }}
                 itemStyle={{ color: "hsl(var(--foreground))" }}
                 labelStyle={{ color: "hsl(var(--muted-foreground))" }}
-                formatter={(value: number) => [`$${value}`, "Revenue"]}
+                formatter={(value: any) => [`$${value}`, "Revenue"]}
               />
               <Area
                 type="monotone"

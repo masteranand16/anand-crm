@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
 
 interface ParallaxProps {
   children: ReactNode;
