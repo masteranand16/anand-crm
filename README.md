@@ -36,6 +36,7 @@ Unlike standard dashboards, this project features a **premium cinematic design l
    ```
 
 2. **Install dependencies:**
+   Make sure you have Node.js installed (v18+ recommended).
    ```bash
    npm install
    ```
@@ -48,10 +49,29 @@ Unlike standard dashboards, this project features a **premium cinematic design l
 4. **Experience the app:**
    Navigate to `http://localhost:5173` in your browser. Be sure to refresh to catch the cinematic boot loader!
 
-## AI Usage Log
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-This project was built entirely from scratch with the assistance of AI (Gemini), focusing heavily on iterating towards a unique, highly custom visual aesthetic. 
-- Architected the React app with Vite, Tailwind, and Zustand.
-- Engineered reusable UI components and forms.
-- Iteratively designed the custom "Cinematic Red & Gold" theme.
-- Developed the complex `framer-motion` boot sequence and live particle background.
+## Assumptions and Known Limitations
+
+- **Mock Authentication:** The authentication system is currently mocked. User credentials are not validated against a real backend, and the session state is managed locally via Zustand.
+- **Local State:** All CRM data (KPIs, Customers, Orders) is hardcoded or managed purely in-memory using Zustand. Data will reset upon a page reload unless otherwise configured with local storage.
+- **Responsive Design:** While optimized for mobile and desktop views, tablet orientation might require minor adjustments in complex table views.
+- **Backend Integration:** This is a frontend-only application. To make it production-ready, you will need to connect the Zustand stores and form submissions to a real API.
+
+## AI Usage Disclosure
+
+- **AI Tools Used:** Gemini 3.1 Pro via Antigravity IDE integration.
+- **Tasks Assisted With:**
+  - Initial project scaffolding and generating the React component structure.
+  - Generating boiler-plate for state management using Zustand and routing logic using React Router.
+  - Crafting complex CSS animations, specifically the particle effects and `framer-motion` boot sequence transitions.
+  - Setting up form validations with Zod and React Hook Form.
+- **What I Wrote Myself:**
+  - Defined the project requirements, design aesthetics, and the overarching "Cinematic Red & Gold" theme.
+  - Fine-tuned the color palettes, layout dimensions, and typography hierarchy to ensure a premium feel.
+  - Adjusted component integration, managed the data flow across routes, and refined the final UI responsiveness.
+- **Independent Technical Decision:** 
+  - I independently chose to use `Zustand` over `Redux` or Context API for state management. This decision was made because Zustand offers a much simpler, hook-based API with minimal boilerplate, which perfectly suits the rapid development and localized state needs of this mocked CRM dashboard without introducing unnecessary overhead.
